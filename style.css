@@ -1,22 +1,30 @@
+.logoheader{
+  transform: rotateZ(-40deg);
+  top: -5rem;
+  left: 0rem;
+  z-index: -10;
+  width: 8rem;
+}
 
+.card-1{
+  transition: all 400ms ease-out;;
+  opacity: .5;
+}
 
+.card-1:hover{
+  transform: scaleX(1.2) translateX(20%);
+  opacity: 1;
+  z-index: 1;
+}  
+  
+.card-2{
+  transition: all 400ms ease-out;;
+  opacity: .5;
+}
 
-.btn-grad {background-image: linear-gradient(to right, #870000 0%, #190A05  51%, #870000  100%)}
-.btn-grad {
-   margin: 10px;
-   padding: 15px 45px;
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: white;            
-   box-shadow: 0 0 20px #eee;
-   border-radius: 10px;
-   display: block;
- }
+.card-2:hover{
+  transform: scaleX(1.2) translateX(-20%);
+  opacity: 1;
+  
+}  
 
- .btn-grad:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   text-decoration: none;
- }
