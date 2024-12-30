@@ -6,25 +6,48 @@
   width: 8rem;
 }
 
-.card-1{
-  transition: all 400ms ease-out;;
-  opacity: .5;
+
+
+.image-1 {   width: 45%; }
+
+.image-2 {   width: 45%; }
+  
+/* --animacion tarjetas-- */
+.perspective{
+  perspective: 150rem;
 }
 
-.card-1:hover{
-  transform: scaleX(1.2) translateX(20%);
-  opacity: 1;
-  z-index: 1;
-}  
-  
-.card-2{
-  transition: all 400ms ease-out;;
-  opacity: .5;
+.rotate:hover {
+  transition: all .5s ease-in-out;
+  transform: rotateY(50deg) ;
+  opacity: 1;|
+
 }
 
-.card-2:hover{
-  transform: scaleX(1.2) translateX(-20%);
-  opacity: 1;
-  
-}  
 
+.textdes-1{
+  position: absolute;
+  transform: translate(-50%);
+  left: 137%;
+  top: 40%;
+
+  width: 70%;
+ 
+}
+
+.rotate:hover ~ .textdes-1{
+  transition: all .5s ease-out;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.rotate:hover ~ .image-2{
+  opacity: .1;
+
+}
+
+.opacity-1{
+  opacity: .3;
+}
