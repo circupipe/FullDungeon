@@ -57,6 +57,15 @@
     list-style: none;
     font-family: 'Georama', sans-serif;
 }
+
+.formstyle{
+    background-color: var(--primary);
+    border-radius: var(--radius-1);
+    border: 2px solid var(--dark-primary) ;
+    color: white;
+
+
+  }
 body{
    /*  min-height: 100vh; */ /* ME APARECIA EL SCROLL ABAJO */
     background-color: var(--bg-primary);
@@ -161,7 +170,7 @@ p, a, li, span, small, strong, label, option, blockquote{
 .op-5 { opacity: .5; }
 .op-75 { opacity: .75; }
 
-.a-ratio-1{ aspect-ratio: 16:9; }
+.a-ratio-1{ aspect-ratio: 16x9; }
 
 /* -- SIZE -- */samp
 .width-10 { width: 10%; }
@@ -361,6 +370,15 @@ p, a, li, span, small, strong, label, option, blockquote{
 
 /* -- FLEXBOX -- */
 .column { flex-direction: column; }
+
+.column-center{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+
+}
 .justify-start{
     justify-content: flex-start;
 }
@@ -491,6 +509,18 @@ p, a, li, span, small, strong, label, option, blockquote{
     color: var(--white);
     border: 2px solid var(--white);
 }
+
+.blog{
+    padding: var(--distance-2) var(--distance-4);
+    border: none;
+    border-radius: var(--radius-1);
+    font-size: var(--size-1);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: #4A0606 0px 5px 10px .2px;
+ }
+
 @media (max-width: 768px){
     .container { padding-inline: var(--distance-6); }
     .grid-3, .grid-4, .grid-5 { grid-template-columns: repeat(2, 1fr); }
