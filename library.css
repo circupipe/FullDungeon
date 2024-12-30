@@ -58,16 +58,8 @@
     font-family: 'Georama', sans-serif;
 }
 
-.formstyle{
-    background-color: var(--primary);
-    border-radius: var(--radius-1);
-    border: 2px solid var(--dark-primary) ;
-    color: white;
-
-
-  }
+/* -- GENERAL -- */
 body{
-   /*  min-height: 100vh; */ /* ME APARECIA EL SCROLL ABAJO */
     background-color: var(--bg-primary);
     color: var(--text);
 }
@@ -145,15 +137,18 @@ p, a, li, span, small, strong, label, option, blockquote{
 .bg-1 { background-color: var(--bg-primary); }
 .bg-2 { background-color: var(--dark-primary); }
 .bg-3 { background-color: color-mix(in srgb, var(--primary), #000 25%); }
+.bg-4 { background: rgb(144,20,20);
+    background: linear-gradient(180deg, rgba(144,20,20,1) 0%, rgba(72,10,10,1) 72%, rgba(0,0,0,1) 100%);}
 .bg-blur { background-color: color-mix(in srgb, var(--primary), #E0353599 99%); }
 .bg-color { background-color: var(--primary); }
 .bg-shadow { background-color: var(--lt-primary); }
 
+
+
 /* -- SHADOWS -- */
 .shadow-1 { box-shadow: #4A0606 (0px 5px 10px .2px); }
 .shadow-2 { box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); }
-.shadow-3 { box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3); }
-.shadow-4 { box-shadow: 0 0 16px 0 rgba(0, 0, 0, .75); }
+.shadow-4 { box-shadow: 0 0 20px 0 #f44f4fb7 ; }
 
 /* -- FILTROS -- */
 .filter-1 {backdrop-filter: blur(5px);}
@@ -442,11 +437,7 @@ p, a, li, span, small, strong, label, option, blockquote{
 .border-color-3, .border-c3, .bc3 { border-color: var(--shadow-primary); }
 .border-color-2, .border-c2, .bc2 { border-color: var(--dark-primary); }
 .border-color-4, .border-c4, .bc4 { border-color: var(--bg-primary); }
-/* -- SHADOWS -- */
-.shadow-1 { box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
-.shadow-2 { box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); }
-.shadow-3 { box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3); }
-.shadow-4 { box-shadow: 0 0 16px 0 rgba(0, 0, 0, .75); }
+
 /* -- HOVER -- */
 .default { cursor: default; }
 .pointer { cursor: pointer; }

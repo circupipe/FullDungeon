@@ -53,3 +53,13 @@
 .opacity-1{
   opacity: .3;
 }
+
+.formstyle{
+  background-color: var(--primary);
+  border-radius: var(--radius-1);
+  border: 2px solid var(--dark-primary) ;
+  color: white;
+  outline: none
+}
+
+
